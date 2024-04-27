@@ -3,10 +3,17 @@
 * {
   margin: 0;
   padding: 0;
+  color: grey;
+}
+
+@font-face {
+  font-family: "manaspec";
+  src: url("assets/manaspc.ttf") format("truetype");
 }
 
 body {
   background: #08141e;
+  font-family: "manaspec", sans-serif;
 }
 
 #wrapper {
