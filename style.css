@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   color: grey;
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -34,6 +35,10 @@ body {
   }
 }
 
+main {
+  height: calc(100vh - 96px);
+}
+
 table {
   border-spacing: 6px;
   margin: 0 auto;
@@ -50,11 +55,23 @@ td {
 }
 
 header {
+  display: flex;
+  align-items: center;
+  justify-content: end;
   border-bottom: 1px solid grey;
-  height: 48px;
+  height: 56px;
+  font-size: 24px;
+}
+
+header p {
+  margin-right: 16px;
 }
 
 footer {
-  border-top: 1px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 40px;
+  border-top: 1px solid grey;
+  font-size: 12px;
 }
