@@ -1,0 +1,30 @@
+@charset 'utf-8';
+
+button {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px 8px 4px 8px;
+  font-family: "manaspec", sans-serif;
+  font-size: 16px;
+  width: fit-content;
+}
+
+#new-game:hover,
+#how-to:hover,
+td:hover {
+  background: antiquewhite;
+  color: #08141e;
+}
+
+#on,
+#off {
+  padding: 0 4px;
+  background: transparent;
+  text-decoration: underline;
+}
+
+#on[disabled],
+#off[disabled] {
+  opacity: 0.5;
+  cursor: default;
+  text-decoration: none;
+}

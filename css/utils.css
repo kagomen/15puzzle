@@ -1,0 +1,22 @@
+@charset 'utf-8';
+
+@font-face {
+  font-family: "manaspec";
+  src: url("../assets/manaspc.ttf") format("truetype");
+}
+
+@keyframes bgscroll {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 0 100vh;
+  }
+}
+
+@media(min-height:660px) {
+  #main-wrapper {
+    height: calc(100vh - 96px);
+  }
+}

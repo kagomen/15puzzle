@@ -1,0 +1,13 @@
+@charset 'utf-8';
+
+* {
+  user-select: none;
+  color: antiquewhite;
+  text-underline-offset: 2px;
+}
+
+body {
+  background: #08141e;
+  font-family: "manaspec", sans-serif;
+  font-size: 16px;
+}

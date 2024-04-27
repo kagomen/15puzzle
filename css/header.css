@@ -1,0 +1,15 @@
+@charset 'utf-8';
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  border-bottom: 1px solid grey;
+  height: 56px;
+  font-size: 24px;
+}
+
+header p {
+  margin-right: 20px;
+  transform: translateY(3px);
+}

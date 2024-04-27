@@ -1,0 +1,10 @@
+@charset 'utf-8';
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  border-top: 1px solid grey;
+  font-size: 12px;
+}
