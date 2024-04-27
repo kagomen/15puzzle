@@ -13,9 +13,6 @@ for (let i = 0; i < 4; i++) {
     td.classList.add('tile');
     tiles.push(td);
     tr.appendChild(td);
-    td.addEventListener('click', (e) => {
-      click(e);
-    })
   }
   table.appendChild(tr);
 }
