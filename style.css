@@ -37,3 +37,13 @@ td {
   user-select: none;
   font-size: 20px;
 }
+
+header {
+  border-bottom: 1px solid grey;
+  height: 48px;
+}
+
+footer {
+  border-top: 1px solid grey;
+  height: 40px;
+}
