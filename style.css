@@ -6,6 +6,7 @@
   box-sizing: border-box;
   user-select: none;
   color: antiquewhite;
+  text-underline-offset: 2px;
 }
 
 @font-face {
@@ -118,4 +119,18 @@ footer {
   height: 40px;
   border-top: 1px solid grey;
   font-size: 12px;
+}
+
+#on,
+#off {
+  padding: 0 4px;
+  background: transparent;
+  text-decoration: underline;
+}
+
+#on[disabled],
+#off[disabled] {
+  opacity: 0.5;
+  cursor: default;
+  text-decoration: none;
 }
