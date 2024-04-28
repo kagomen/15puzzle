@@ -13,11 +13,13 @@
   <link rel="stylesheet" href="css/tiles.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/modal.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"></script>
   <script src="js/main.js" defer></script>
   <script src="js/sound.js" defer></script>
   <script src="js/new-game.js" defer></script>
   <script src="js/event.js" defer></script>
+  <script src="js/clear.js" defer></script>
 </head>
 
 <body>
@@ -52,6 +54,25 @@
     <footer>
       <p>Developed by kagome 2024</p>
     </footer>
+
+    <!-- クリア画面 -->
+
+    <div id="mask" hidden></div>
+    <section id="clear-screen" hidden>
+      <h2>Game Completed</h2>
+
+      <fieldset>
+        <legend>Your Score</legend>
+        <p>Moves: <span id="count-score"></span></p>
+        <p>Time: <span id="time-score"></span></p>
+        <button id="share">Share on X</button>
+      </fieldset>
+      <button id="try-again">Try Again</button>
+      <button id="close">Close</button>
+    </section>
+
+    <!-- クリア画面ここまで -->
+
   </div>
 </body>
 
