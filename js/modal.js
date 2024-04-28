@@ -26,3 +26,13 @@ document.getElementById('try-again').addEventListener('click', () => {
   counter.textContent = "0";
   timer.textContent = "0";
 });
+
+
+document.getElementById('share').addEventListener('click', () => {
+
+  let text = encodeURIComponent(`🧩 Just solved #15puzzle in ${count} moves and ${timeScore.textContent} seconds! Give it a try! 👾\n`);
+  let url = encodeURIComponent('https://kagomen.github.io/15puzzle/');
+
+  const tweetUrl = `https://twitter.com/intent/tweet?url=${url}&text=${text}`;
+  window.open(tweetUrl, '_blank');
+});
