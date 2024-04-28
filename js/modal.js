@@ -19,11 +19,10 @@ document.getElementById('close').addEventListener('click', () => {
 });
 
 document.getElementById('try-again').addEventListener('click', () => {
+  shuffle();
   mask.hidden = true;
   modal.hidden = true;
-
   count = 0;
   counter.textContent = "0";
   timer.textContent = "0";
-  shuffle();
 });
