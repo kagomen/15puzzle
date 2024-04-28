@@ -4,11 +4,11 @@
   height: 100vh;
   max-width: 770px;
   margin: 0 auto;
-  background-image: url(../assets/bg-img.png);
+  background-image: url(../assets/bg-img/bg-img-black.png);
   background-size: cover;
   animation: bgscroll 1000s linear infinite;
   animation-timing-function: steps(600);
-  backdrop-filter: blur(2px);
+  filter: saturate(50%);
 }
 
 #sound-wrapper {
