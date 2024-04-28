@@ -20,10 +20,10 @@ tiles.forEach(tile => {
           elapsedTime = Date.now() - startTime;
           timer.textContent = Math.floor(elapsedTime / 1000);
         }, 1000);
-
-        count++;
-        counter.textContent = count;
       }
+
+      count++;
+      counter.textContent = count;
     }
 
     moveFailed = false;
