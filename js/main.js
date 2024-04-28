@@ -13,16 +13,16 @@ function init() {
 function click(e) {
   const index = e.target.index;
   // 上が空マスの場合
-  if (index - 4 >= 0 && tiles[index - 4].value == 0) {
+  if (index - 4 >= 0 && tiles[index - 4].value == 16) {
     swap(index, index - 4);
     // 下が空マスの場合
-  } else if (index + 4 <= 15 && tiles[index + 4].value == 0) {
+  } else if (index + 4 <= 15 && tiles[index + 4].value == 16) {
     swap(index, index + 4);
     // 左が空マスの場合
-  } else if (index - 1 >= 0 && tiles[index - 1].value == 0) {
+  } else if (index - 1 >= 0 && tiles[index - 1].value == 16) {
     swap(index, index - 1);
     // 右が空マスの場合
-  } else if (index + 1 <= 15 && tiles[index + 1].value == 0) {
+  } else if (index + 1 <= 15 && tiles[index + 1].value == 16) {
     swap(index, index + 1);
   } else {
     moveFailed = true;
@@ -31,7 +31,7 @@ function click(e) {
 
 function swap(index, empty) {
   const n = tiles[index].value;
-  tiles[index].value = 0;
+  tiles[index].value = 16;
   tiles[index].textContent = "";
   tiles[empty].value = n;
   tiles[empty].textContent = n;
@@ -44,8 +44,8 @@ function createTiles() {
       const td = document.createElement('td');
       const n = i * 4 + j;
       td.index = n;
-      td.value = n;
-      td.textContent = n == 0 ? "" : n;
+      td.value = n + 1;
+      td.textContent = n == 15 ? "" : n + 1;
       td.classList.add('tile');
       tiles.push(td);
       tr.appendChild(td);
