@@ -17,3 +17,13 @@ document.getElementById('close').addEventListener('click', () => {
   mask.hidden = true;
   modal.hidden = true;
 });
+
+document.getElementById('try-again').addEventListener('click', () => {
+  mask.hidden = true;
+  modal.hidden = true;
+
+  count = 0;
+  counter.textContent = "0";
+  timer.textContent = "0";
+  shuffle();
+});
