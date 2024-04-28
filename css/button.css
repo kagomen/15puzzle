@@ -8,11 +8,14 @@ button {
   width: fit-content;
 }
 
-#new-game:hover,
-#how-to:hover,
-td:hover {
-  background: antiquewhite;
-  color: #08141e;
+@media (hover: hover) {
+
+  #new-game:hover,
+  #how-to:hover,
+  td:hover {
+    background: antiquewhite;
+    color: #08141e;
+  }
 }
 
 #on,
