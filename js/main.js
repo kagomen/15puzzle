@@ -1,28 +1,17 @@
 'use strict';
 const table = document.getElementById('table');
 const tiles = [];
+let moveFailed = false;
 
-for (let i = 0; i < 4; i++) {
-  const tr = document.createElement('tr');
-  for (let j = 0; j < 4; j++) {
-    const td = document.createElement('td');
-    const n = i * 4 + j;
-    td.index = n;
-    td.value = n;
-    td.textContent = n == 0 ? "" : n;
-    td.classList.add('tile');
-    tiles.push(td);
-    tr.appendChild(td);
-  }
-  table.appendChild(tr);
-}
+window.addEventListener('load', init());
 
-for (let i = 0; i < 1000; i++) {
-  click({ target: { index: Math.floor(Math.random() * 16) } });
+function init() {
+  createTiles();
+  shuffle();
 }
 
 function click(e) {
-  let index = e.target.index;
+  const index = e.target.index;
   // 上が空マスの場合
   if (index - 4 >= 0 && tiles[index - 4].value == 0) {
     swap(index, index - 4);
@@ -35,6 +24,8 @@ function click(e) {
     // 右が空マスの場合
   } else if (index + 1 <= 15 && tiles[index + 1].value == 0) {
     swap(index, index + 1);
+  } else {
+    moveFailed = true;
   }
 }
 
@@ -44,4 +35,28 @@ function swap(index, empty) {
   tiles[index].textContent = "";
   tiles[empty].value = n;
   tiles[empty].textContent = n;
+}
+
+function createTiles() {
+  for (let i = 0; i < 4; i++) {
+    const tr = document.createElement('tr');
+    for (let j = 0; j < 4; j++) {
+      const td = document.createElement('td');
+      const n = i * 4 + j;
+      td.index = n;
+      td.value = n;
+      td.textContent = n == 0 ? "" : n;
+      td.classList.add('tile');
+      tiles.push(td);
+      tr.appendChild(td);
+    }
+    table.appendChild(tr);
+  }
+}
+
+function shuffle() {
+  for (let i = 0; i < 1000; i++) {
+    click({ target: { index: Math.floor(Math.random() * 16) } });
+  }
+  moveFailed = false;
 }

@@ -6,7 +6,10 @@ let count = 0;
 tiles.forEach(tile => {
   tile.addEventListener('click', (e) => {
     click(e);
-    count++;
-    counter.textContent = count;
+    if (moveFailed == false) {
+      count++;
+      counter.textContent = count;
+    }
+    moveFailed = false;
   })
 });
