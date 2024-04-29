@@ -1,6 +1,7 @@
 @charset 'utf-8';
 
-#mask {
+#mask,
+#how-to-mask {
   background: #08141e80;
   position: fixed;
   top: 0;
@@ -10,7 +11,8 @@
   z-index: 100;
 }
 
-#clear-screen {
+#clear-screen,
+#how-to-wrapper {
   width: fit-content;
   background: #08141e;
   border: 1px solid antiquewhite;
@@ -23,9 +25,20 @@
   z-index: 200;
 }
 
-#clear-screen h2 {
+#how-to-wrapper {
+  width: 320px;
+  top: 32px;
+}
+
+#clear-screen h2,
+#how-to-wrapper h2 {
   margin-bottom: 40px;
   font-size: 24px;
+  text-align: center;
+}
+
+#how-to-wrapper h2 {
+  margin-bottom: 24px;
 }
 
 fieldset {
@@ -56,4 +69,20 @@ legend {
 
 #close {
   margin: 8px auto;
+}
+
+#how-to-wrapper img {
+  display: block;
+  margin: 16px auto;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+#how-to-wrapper p {
+  line-height: 22px;
+}
+
+#how-to-wrapper button {
+  display: block;
+  margin: 16px auto 0;
 }

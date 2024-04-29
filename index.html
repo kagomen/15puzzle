@@ -21,6 +21,7 @@
   <script src="js/event.js" defer></script>
   <script src="js/clear.js" defer></script>
   <script src="js/modal.js" defer></script>
+  <script src="js/how-to.js" defer></script>
   <link rel="icon" href="assets/favicon.png" type="image/png">
 </head>
 
@@ -54,8 +55,22 @@
     </div>
 
     <footer>
-      <p>Developed by kagome 2024</p>
+      <p>Developed by <a href="https://github.com/kagomen/15puzzle">kagome</a> 2024</p>
     </footer>
+
+    <!-- ハウツー画面ここから -->
+
+    <div id="how-to-mask" hidden></div>
+    <section id="how-to-wrapper" hidden>
+      <h2>How To Play</h2>
+      <p>Click on adjacent numbered tiles to the empty space and aim for the completed picture shown below.</p>
+      <img src="assets/completed-puzzle.png" alt="image of the completed puzzle">
+      <p>Challenge yourself to reduce moves and play time as you improve.</p>
+
+      <button id="how-to-close">Close</button>
+    </section>
+
+    <!-- ハウツー画面ここまで -->
 
     <!-- クリア画面 ここから-->
 
