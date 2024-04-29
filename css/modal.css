@@ -47,6 +47,16 @@
   color: black;
 }
 
+#clear-screen button {
+  display: flex;
+}
+
+#clear-screen img {
+  width: 16px;
+  margin-left: 10px;
+  transform: translateY(-2px);
+}
+
 fieldset {
   width: fit-content;
   padding: 20px 24px;
