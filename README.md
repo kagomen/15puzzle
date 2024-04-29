@@ -1,6 +1,6 @@
 # 15puzzle
 
-<img src="assets/game-preview.png" alt="game-preview">
+<img src="assets/preview.png" alt="game-preview">
 
 ## 概要 (_Overview_)
 
