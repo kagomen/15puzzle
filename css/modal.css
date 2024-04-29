@@ -18,16 +18,23 @@
   border: 1px solid antiquewhite;
   padding: 32px;
   position: fixed;
-  top: 120px;
+  top: 80px;
   right: 0;
   left: 0;
   margin: 0 auto;
   z-index: 200;
 }
 
+@media(max-height:700px) {
+
+  #clear-screen,
+  #how-to-wrapper {
+    top: 32px;
+  }
+}
+
 #how-to-wrapper {
   width: 320px;
-  top: 32px;
 }
 
 #clear-screen h2,
