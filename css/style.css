@@ -6,8 +6,8 @@
   margin: 0 auto;
   background-image: url(../assets/bg-img/bg-img-black.png);
   background-size: cover;
-  animation: bgscroll 1000s linear infinite;
-  animation-timing-function: steps(600);
+  animation: bgscroll 500s linear infinite;
+  animation-timing-function: steps(400);
   filter: saturate(50%);
 }
 

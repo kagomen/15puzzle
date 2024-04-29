@@ -14,7 +14,7 @@
 #clear-screen,
 #how-to-wrapper {
   width: fit-content;
-  background: #08141e;
+  background: black;
   border: 1px solid antiquewhite;
   padding: 32px;
   position: fixed;
@@ -41,11 +41,18 @@
   margin-bottom: 24px;
 }
 
+#clear-screen button,
+#how-to-wrapper button {
+  background: antiquewhite;
+  color: black;
+}
+
 fieldset {
   width: fit-content;
   padding: 20px 24px;
   margin: 0 auto;
   line-height: 24px;
+  text-align: center;
 }
 
 legend {
