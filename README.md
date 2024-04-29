@@ -7,8 +7,10 @@
 15 パズルを作りました。  
 8 パズル・24 パズルも作りたいのですが、もしかしたら実装しないかもしれません。  
 ゲームをクリアすると、スコアを X（Twitter）で共有できます。  
-また、宇宙の雰囲気が楽しめますので、良ければサウンドをオンにして遊んでみてください 🪐  
+また、宇宙の雰囲気が楽しめますので、良ければサウンドをオンにして遊んでみてください 🪐
+
 &nbsp;
+
 _I created a 15 puzzle game._  
 _I'm considering making 8-puzzle and 24-puzzle as well, but I might not implement them._  
 _When you clear the game, you can share your score on Twitter._  
