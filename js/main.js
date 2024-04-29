@@ -55,7 +55,7 @@ function createTiles() {
 }
 
 function shuffle() {
-  for (let i = 0; i < 1000; i++) {
+  for (let i = 0; i < 3000; i++) {
     click({ target: { index: Math.floor(Math.random() * 16) } });
   }
   moveFailed = false;
