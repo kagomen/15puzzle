@@ -1,6 +1,6 @@
 # 15puzzle
 
-<img src="assets/preview.png" alt="game-preview">
+<img src="assets/game-preview.png" alt="game-preview">
 
 ## 概要 (_Overview_)
 
@@ -8,8 +8,6 @@
 8 パズル・24 パズルも作りたいのですが、もしかしたら実装しないかもしれません。  
 ゲームをクリアすると、スコアを X（Twitter）で共有できます。  
 また、宇宙の雰囲気が楽しめますので、良ければサウンドをオンにして遊んでみてください 🪐
-
-&nbsp;
 
 _I created a 15 puzzle game._  
 _I'm considering making 8-puzzle and 24-puzzle as well, but I might not implement them._  
