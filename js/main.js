@@ -19,10 +19,10 @@ function click(e) {
   } else if (index + 4 <= 15 && tiles[index + 4].value == 16) {
     swap(index, index + 4);
     // 左が空マスの場合
-  } else if (index - 1 >= 0 && tiles[index - 1].value == 16) {
+  } else if (index % 4 != 0 && tiles[index - 1].value == 16) {
     swap(index, index - 1);
     // 右が空マスの場合
-  } else if (index + 1 <= 15 && tiles[index + 1].value == 16) {
+  } else if (index % 4 != 3 && tiles[index + 1].value == 16) {
     swap(index, index + 1);
   } else {
     moveFailed = true;
